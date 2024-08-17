@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Main Page - Book 1</title>
+    <style>
+      .section {
+        margin-bottom: 20px;
+        padding: 15px;
+        background-color: #f9f9f9;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <img
+      src="path/to/your/image.jpg"
+      alt="Sample Image"
+      style="width: 100%; height: auto"
+    />
+    <div class="section">
+      <h2>Main Page of Book 1</h2>
+      <p>
+        ၃။ သုဘာသိတသုတ္တ မေ သုတံ – ဧက သမယံ ဘဂဝါ သာဝတ္ထိယံ ဝိဟရတိ ဇေတဝနေ
+        အနာထပိဏ္ဍိကဿ အာရာမေ။ တတြ ခေါ ဘဂဝါ ဘိက္ခူ ဧဝံ အာမန္တေသိ – ‘‘ဘိက္ခဝေါ’’တိ။
+        ‘‘ဘဒန္တေ’’တိ တေ ဘိက္ခူ ဘဂဝတော ပစ္စဿောသုံ။...
+      </p>
+    </div>
+    <video controls width="100%">
+      <source src="path/to/your/video.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+
+    <pre><code>
+        // Sample JavaScript code
+        function sayHello() {
+            alert('Hello, World!');
+        }
+        </code></pre>
+
+    <form id="quizForm">
+      <h3>Question 1: What is 2 + 2?</h3>
+      <input type="radio" name="q1" value="3" /> 3<br />
+      <input type="radio" name="q1" value="4" /> 4<br />
+      <input type="radio" name="q1" value="5" /> 5<br />
+
+      <h3>Question 2: What is the capital of France?</h3>
+      <input type="radio" name="q2" value="Berlin" /> Berlin<br />
+      <input type="radio" name="q2" value="Paris" /> Paris<br />
+      <input type="radio" name="q2" value="Rome" /> Rome<br />
+
+      <button type="button" onclick="gradeQuiz()">Submit</button>
+    </form>
+
+    <div id="result"></div>
+
+    <script>
+      function gradeQuiz() {
+        let score = 0;
+        if (document.querySelector('input[name="q1"]:checked').value === "4")
+          score++;
+        if (
+          document.querySelector('input[name="q2"]:checked').value === "Paris"
+        )
+          score++;
+        document.getElementById("result").textContent =
+          "You scored: " + score + "/2";
+      }
+    </script>
+  </body>
+</html>
