@@ -15,6 +15,19 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+footer p {
+  font-size: 1.2rem;
+  color: yellowgreen;
+}
+img {
+  width: 65px;
+}
+
+#hearts {
+  color: rgb(255, 187, 0);
+  font-size: 1.3rem;
+}
+
 #library-container {
   display: flex;
   background-color: var(--primary-color);
