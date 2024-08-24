@@ -5,19 +5,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const folderStructure = {
     Book1: {
-      book1a: [
-        "main.html",
-        "commentary.html",
-        "subcommentaryYangonMandalay.html",
-        "one.html",
-        "two.html",
-        "three.html",
-      ],
-      book1b: ["main.html", "commentary.html", "subcommentary.html"],
+      book1a: ["lesson.html", "recording.html", "quiz.html"],
+      book1b: ["lesson.html", "recording.html", "quiz.html"],
     },
     Book2: {
-      book2a: ["main.html", "commentary.html", "subcommentary.html"],
-      book2b: ["main.html", "commentary.html", "subcommentary.html"],
+      book2a: ["lesson.html", "recording.html", "quiz.html"],
+      book2b: ["lesson.html", "recording.html", "quiz.html"],
     },
   };
 
