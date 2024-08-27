@@ -34,7 +34,7 @@ img {
 }
 
 #bookList {
-  width: 275px;
+  width: 350px;
   padding: 20px;
   box-sizing: border-box;
   border-right: 1px solid #ccc;
@@ -161,7 +161,6 @@ footer a {
   width: 90%;
   margin: 10px auto;
 }
-
 
 /* Tooltips */
 .tooltip {
@@ -388,7 +387,9 @@ p.tooltip:hover::after {
   }
 }
 
-.easyNote > h3, .nerdNote > h3, .importantNote > h3 {
+.easyNote > h3,
+.nerdNote > h3,
+.importantNote > h3 {
   color: rgb(5, 100, 215);
   font-size: 1.1rem;
   font-weight: 300;
