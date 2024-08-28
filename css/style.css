@@ -244,10 +244,11 @@ p.tooltip::after {
   white-space: nowrap;
   transform: translateX(-50%);
   left: 50%;
-  bottom: 100%;
+  bottom: 80%;
   margin-bottom: 5px;
   transition: opacity 0.3s ease;
 }
+
 p.tooltip:hover::after {
   visibility: visible;
   opacity: 1;
@@ -337,6 +338,9 @@ p.tooltip:hover::after {
   width: 49%; /* Adjust as needed */
   margin: 10px auto;
   font-size: 1.5rem;
+}
+.column strong {
+  color: cadetblue;
 }
 
 .column h3 {
