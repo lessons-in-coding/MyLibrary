@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Recordings</title>
+    <link rel="stylesheet" href="../../../css/recording.css" />
+  </head>
+  <body>
+    <header>
+      <h1>My Recordings</h1>
+    </header>
+
+    <main>
+      <div class="video-player">
+        <video id="main-video" controls>
+          <source
+            src="../../../recordings/SampleVideo_1280x720_20mb.mp4"
+            type="video/mp4"
+          />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
+      <div class="video-list">
+        <div
+          class="video-thumbnail"
+          data-video-src="../../../recordings/SampleVideo_1280x720_20mb.mp4"
+        >
+          <p>Video 1</p>
+        </div>
+        <div
+          class="video-thumbnail"
+          data-video-src="../../../recordings/SampleVideo_1280x720_5mb.mp4"
+        >
+          <p>Video 2</p>
+        </div>
+        <div
+          class="video-thumbnail"
+          data-video-src="../../../recordings/SampleVideo_1280x720_1mb.mp4"
+        >
+          <p>Video 3</p>
+        </div>
+        <!-- Add more thumbnails as needed -->
+      </div>
+    </main>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const thumbnails = document.querySelectorAll('.video-thumbnail');
+        const mainVideo = document.getElementById('main-video');
+
+        thumbnails.forEach(thumbnail => {
+          thumbnail.addEventListener('click', function () {
+            const videoSrc = this.getAttribute('data-video-src');
+
+            // Update the main video source and play it
+            mainVideo.src = videoSrc;
+            mainVideo.load();
+            mainVideo.play();
+          });
+        });
+      });
+    </script>
+    <script src="../../../js/recording.js"></script>
+  </body>
+</html>

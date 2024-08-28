@@ -23,6 +23,8 @@ body {
   padding: 3% 10%;
   border-radius: 10px;
   text-align: center;
+  margin: 5% auto;
+  height: auto;
 }
 
 #start-container h2 {

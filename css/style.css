@@ -1,5 +1,5 @@
 :root {
-  --primary-color: rgb(206, 219, 227);
+  --primary-color: rgb(241, 241, 241);
   --secondary-color: orange;
   --tertiary-color: white;
   --primary-bg-color: rgba(241, 241, 241, 0.508);
@@ -31,6 +31,7 @@ img {
 #library-container {
   display: flex;
   background-color: var(--primary-color);
+  height: auto;
 }
 
 #bookList {
@@ -140,14 +141,17 @@ footer a {
 .section {
   margin-bottom: 20px;
   padding: 15px;
-  background-color: #eef9e9;
+  /* background-color: #eef9e9; */
   border: 1px solid #ccc;
   border-radius: 4px;
 }
 
 .center {
   text-align: center;
-  margin: 10px 0;
+  margin: 20px 0;
+}
+.center span {
+  font-size: 2.5rem;
 }
 
 .heading {
@@ -155,9 +159,14 @@ footer a {
   padding: 10px;
   text-align: center;
   color: rgb(230, 3, 230);
-  font-size: 1.2rem;
+  font-size: 2.2rem;
   border-radius: 7px;
   /* background-color: beige; */
+  width: 90%;
+  margin: 10px auto;
+}
+.intro {
+  font-size: 1.5rem;
   width: 90%;
   margin: 10px auto;
 }
@@ -213,8 +222,8 @@ p.tooltip::after {
   visibility: hidden;
   opacity: 0;
   width: auto;
-  background-color: #333;
-  color: #fff;
+  background-color: rgba(145, 112, 93, 0.913);
+  color: #faf7f7;
   text-align: center;
   border-radius: 5px;
   padding: 5px;
@@ -313,18 +322,20 @@ p.tooltip:hover::after {
 }
 
 .column {
-  width: 48%; /* Adjust as needed */
-}
-
-.column h3,
-.column p {
-  margin: 5px 13%;
+  width: 49%; /* Adjust as needed */
+  margin: 10px auto;
+  font-size: 1.5rem;
 }
 
 .column h3 {
   color: green;
-  font-size: 1.2rem;
-  margin-top: 12px;
+  font-size: 2rem;
+  /* margin-top: 12px; */
+  margin: 5px 10px;
+}
+.column p {
+  font-size: 1.5rem;
+  margin: 5px 10px;
 }
 
 .three-columns {
@@ -371,12 +382,26 @@ p.tooltip:hover::after {
   }
 }
 
+.welcome-intro h2 {
+  text-align: center;
+  color: blue;
+  font-size: 1.7rem;
+}
+.welcome-intro p {
+  color: darkgreen;
+  font-size: 1.3rem;
+}
+.welcome-intro ul {
+  color: rgb(59, 103, 205);
+  font-size: 1.2rem;
+}
 .importantNote {
-  border-left: 2px solid rgb(219, 23, 1);
+  /* border-left: 2px solid rgb(219, 23, 1); */
   padding: 10px 12px;
   box-shadow: 0px 1px 1px rgb(136, 89, 4);
-  background-color: rgba(240, 246, 200, 0.797);
-  border-radius: 9px;
+  /* background-color: rgba(240, 246, 200, 0.797); */
+  border-radius: 4px;
+  margin: 4% auto;
 
   &::before {
     /* content: '[ မှတ်ချက် ]'; */
@@ -385,6 +410,10 @@ p.tooltip:hover::after {
     font-weight: 500;
     font-size: 1.2rem;
   }
+}
+.importantNote ul {
+  list-style: none;
+  padding-left: 10px;
 }
 
 .easyNote > h3,
