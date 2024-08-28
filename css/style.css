@@ -148,7 +148,7 @@ footer a {
 
 .center {
   text-align: center;
-  margin: 20px 0;
+  margin: 5% 0;
 }
 .center span {
   font-size: 2.5rem;
@@ -172,12 +172,18 @@ footer a {
 }
 
 /* Tooltips */
+.tikamatika span {
+  margin-left: 5%;
+  font-size: 1.5rem;
+  color: cadetblue;
+}
 .tooltip {
   position: relative;
   display: inline-block;
-  border-bottom: 1px dotted rgb(218, 191, 35); /* Add dotted underline */
-  color: maroon; /* Set color for tooltip text */
-  cursor: help; /* Change cursor to indicate tooltip */
+  cursor: pointer;
+  /* border-bottom: 1px dotted rgb(218, 191, 35); Add dotted underline */
+  /* color: maroon; Set color for tooltip text */
+  /* cursor: help; Change cursor to indicate tooltip */
   &:hover {
     color: olive;
     /* border-radius: 8px; */
@@ -197,24 +203,30 @@ p.tooltip {
 
 .tooltip::after {
   content: attr(data-tooltip); /* Use the content attribute for tooltip text */
-  display: none;
+  /* display: none; */
   position: absolute;
   background-color: antiquewhite;
   color: #000;
   padding: 5px;
-  border-radius: 0 12px;
+  border-radius: 4px 12px;
   /* border: 1px solid #ccc; */
-  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  z-index: 10;
   white-space: nowrap; /* Prevents tooltip text from wrapping */
   font-size: 12px;
   left: 50%; /* Center the tooltip horizontally */
   transform: translateX(-50%); /* Adjust for center alignment */
   bottom: calc(100%); /* Position just above the .tooltip element */
   /* bottom: calc(100% + 5px);  */
+  /* bottom: 120%;  Position above the text with more space */
 }
 
 .tooltip:hover::after {
-  display: block; /* Show tooltip on hover */
+  /* display: block; Show tooltip on hover */
+  opacity: 1;
+  visibility: visible;
 }
 
 p.tooltip::after {

@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const folderStructure = {
     Pali_Primary: {
       Grammar: ["lesson.html", "recording.html", "quiz.html"],
-      Lessons: ["lesson.html", "recording.html", "quiz.html"],
+      Sangaha: ["သင်္ဂြိုဟ်.html", "ညဝါ.html", "recording.html", "quiz.html"],
       Readings: ["lesson.html", "recording.html", "quiz.html"],
     },
     Book2: {
