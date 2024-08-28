@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Recordings</title>
+    <link rel="stylesheet" href="../../../css/recording.css" />
+  </head>
+  <body>
+    <header>
+      <h1>My Recordings</h1>
+    </header>
+
+    <main>
+      <div class="video-player">
+        <video id="main-video" controls>
+          <source
+            src="../../../recordings/SampleVideo_1280x720_20mb.mp4"
+            type="video/mp4"
+          />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
+      <div class="video-list">
+        <div
+          class="video-thumbnail"
+          data-video-src="../../../recordings/SampleVideo_1280x720_20mb.mp4"
+        >
+          <!-- <img src="../../../images/plant2.png" alt="Video 2" /> -->
+          <p>Video 1</p>
+        </div>
+        <div
+          class="video-thumbnail"
+          data-video-src="../../../recordings/SampleVideo_1280x720_5mb.mp4"
+        >
+          <!-- <img src="../../../images/plant2.png" alt="Video 2" /> -->
+          <p>Video 2</p>
+        </div>
+        <div
+          class="video-thumbnail"
+          data-video-src="../../../recordings/SampleVideo_1280x720_1mb.mp4"
+        >
+          <!-- <img src="../../../images/plant2.png" alt="Video 2" /> -->
+          <p>Video 3</p>
+        </div>
+        <!-- <div class="video-thumbnail" data-video-src="video2.mp4">
+          <img src="../../../images/plant2.png" alt="Video 2" />
+          <p>Video 4</p>
+        </div> -->
+        <!-- Add more thumbnails as needed -->
+      </div>
+    </main>
+
+    <script src="../../../js/recording.js"></script>
+  </body>
+</html>

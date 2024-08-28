@@ -4,18 +4,24 @@ document.addEventListener("DOMContentLoaded", () => {
   const MAX_FILES = 2;
 
   const folderStructure = {
-    Pali_Primary: {
+    မူလတန်း: {
       Grammar: ["lesson.html", "recording.html", "quiz.html"],
       Sangaha: ["သင်္ဂြိုဟ်.html", "ညဝါ.html", "recording.html", "quiz.html"],
       Readings: ["lesson.html", "recording.html", "quiz.html"],
     },
-    Book2: {
+    သီလက္ခန်: {
       book2a: ["lesson.html", "recording.html", "quiz.html"],
       book2b: ["lesson.html", "recording.html", "quiz.html"],
     },
-    Book3: {
-      book3a: ["lesson.html", "recording.html", "quiz.html"],
-      book3b: ["lesson.html", "recording.html", "quiz.html"],
+    ပထမဆင့်: {
+      Grammar: ["lesson.html", "recording.html", "quiz.html"],
+      Sangaha: ["သင်္ဂြိုဟ်.html", "ညဝါ.html", "recording.html", "quiz.html"],
+      Readings: ["lesson.html", "recording.html", "quiz.html"],
+    },
+    Front_End: {
+      Grammar: ["lesson.html", "recording.html", "quiz.html"],
+      Sangaha: ["သင်္ဂြိုဟ်.html", "ညဝါ.html", "recording.html", "quiz.html"],
+      Readings: ["lesson.html", "recording.html", "quiz.html"],
     },
   };
 
