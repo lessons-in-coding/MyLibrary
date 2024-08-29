@@ -2,7 +2,7 @@
 
 ## ရေးသားထားပုံ
     - ပါဠိကို အခြေခံ၍ သင်ကြားထားသောကြောင့် Desktop version ဖြစ်ပါသည်။ ထို့ကြောင့် မိမိတို့၏ကွန်ပြူတာ၌ Google Chrome browser ဖြင့်ဖွင့်၍ သင်ကြားပါလျှင် အကောင်းဆုံးသော မြင်ကွင်းတစ်ခုဖြစ်ပါလိမ့်မည်။
-    
+
     - အသုံးပြုထားသော Languages
         - HTML
         - CSS
@@ -32,6 +32,12 @@
         - .gitignore
         - index.html
         - readme.md
+
+## ဝက်ဘ်ဆိုဒ်ပုံစံ
+    - header and footer links (resources links)
+    - books to read and user rec 
+        - enter name or age whatever in search area
+        - hit enter key to search for it and hit enter key again to show all user lists
 
 ## လေ့လာရန်
     - Header & Footer တို့တွင် ပိဋကတ်နှင့်ဆိုင်သော Resources link-များကို ပေးထားသည်
