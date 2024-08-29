@@ -103,8 +103,9 @@ document.addEventListener("DOMContentLoaded", () => {
         "projectQuiz.html",
       ],
     },
-    PannaCollege: {
-      PannaCollege: ["သံဃာစာရင်း.html"],
+    PBC: {
+      lists: ["index.html", "lesson.html", "quiz.html", "recording.html"],
+      book2b: ["lesson.html", "quiz.html", "recording.html"],
     },
   };
 

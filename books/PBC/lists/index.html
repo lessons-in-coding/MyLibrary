@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ဝါဆိုသံဃာစာရင်း</title>
+    <link rel="stylesheet" href="../../../css/PannaCollege/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>ဝါဆိုသံဃာစာရင်း</h1>
+
+      <!-- Search Section -->
+      <div id="searchForm" class="search-section">
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Search by Name, or Date of Birth, or Place of Birth"
+        />
+        <button id="searchBtn">Search</button>
+        <button id="addUserBtn">Add New User</button>
+      </div>
+
+      <!-- User List -->
+      <div id="userListSection">
+        <h2>List of Users</h2>
+        <ul id="userList"></ul>
+      </div>
+
+      <!-- User Form -->
+      <div id="userFormSection" class="hidden">
+        <h2>New User (Fill up the form)</h2>
+        <form id="userForm">
+          <!-- Personal Background -->
+          <fieldset class="formBackgroundOdd">
+            <legend class="legend">Personal Background:</legend>
+            <label for="name">Name:</label>
+            <input type="text" id="name" required /><br />
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" required /><br />
+
+            <label for="birthPlace">Place of Birth:</label>
+            <input type="text" id="birthPlace" required /><br />
+
+            <label for="id">ID (NRC):</label>
+            <input type="text" id="id" required /><br />
+
+            <label for="fatherName">Father's Name:</label>
+            <input type="text" id="fatherName" required /><br />
+
+            <label for="motherName">Mother's Name:</label>
+            <input type="text" id="motherName" required /><br />
+          </fieldset>
+
+          <!-- Educational Background -->
+          <fieldset class="formBackgroundEven">
+            <legend class="legend">Educational Background:</legend>
+            <label for="highestEducation">Highest Education:</label>
+            <input type="text" id="highestEducation" /><br />
+
+            <label for="certifications">Previous Certifications:</label>
+            <input type="text" id="certifications" /><br />
+
+            <label for="projects">Upcoming Projects:</label>
+            <input type="text" id="projects" /><br />
+
+            <label for="skills">Interests and Skills:</label>
+            <input type="text" id="skills" /><br />
+          </fieldset>
+
+          <!-- Travel -->
+          <fieldset class="formBackgroundOdd">
+            <legend class="legend">Places:</legend>
+            <label for="previousPlaces">Previous Address:</label>
+            <input type="text" id="previousPlaces" /><br />
+
+            <label for="previousPlaces">Current Address:</label>
+            <input type="text" id="newPlace" /><br />
+
+            <label for="arrivalDate">Started Date At:</label>
+            <input type="date" id="arrivalDate" /><br />
+
+            <label for="reason">Reason for Moving:</label>
+            <input type="text" id="reason" /><br />
+          </fieldset>
+
+          <!-- Position -->
+          <fieldset class="formBackgroundEven">
+            <legend class="legend">Position:</legend>
+            <label for="currentPosition">Current Position:</label>
+            <input type="text" id="currentPosition" /><br />
+
+            <label for="previousPositions">Previous Positions:</label>
+            <input type="text" id="previousPositions" /><br />
+          </fieldset>
+
+          <!-- Ordination -->
+          <fieldset class="formBackgroundOdd">
+            <legend class="legend">Ordination:</legend>
+            <label for="higherOrdination">Date of Higher Ordination:</label>
+            <input type="date" id="higherOrdination" /><br />
+
+            <label for="noviceOrdination">Date of Novice Ordination:</label>
+            <input type="date" id="noviceOrdination" /><br />
+
+            <label for="instructorName">Name of Instructor:</label>
+            <input type="text" id="instructorName" /><br />
+
+            <label for="supervisorName">Name of Supervisor:</label>
+            <input type="text" id="supervisorName" /><br />
+
+            <label for="ordinationPlace">Name of Ordination Place:</label>
+            <input type="text" id="ordinationPlace" /><br />
+
+            <label for="supportedMonks">Number of Supported Monks:</label>
+            <input type="number" id="supportedMonks" /><br />
+
+            <label for="monkhoodTime">Time of Becoming Monkhood:</label>
+            <input type="text" id="monkhoodTime" /><br />
+
+            <label for="supporterNames">Name of Supporter(s):</label>
+            <input type="text" id="supporterNames" /><br />
+          </fieldset>
+
+          <!-- Contact -->
+          <fieldset class="formBackgroundEven">
+            <legend class="legend">Contact:</legend>
+            <label for="email">Email:</label>
+            <input type="email" id="email" required /><br />
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" required /><br />
+
+            <label for="github">GitHub:</label>
+            <input type="text" id="github" /><br />
+          </fieldset>
+
+          <!-- Image -->
+          <fieldset class="formBackgroundOdd">
+            <legend class="legend">Upload Image:</legend>
+            <input
+              type="file"
+              id="userImage"
+              name="userImage"
+              accept="images/PannaCollege/*"
+            />
+          </fieldset>
+
+          <!-- Memo -->
+          <fieldset class="formBackgroundEven">
+            <legend class="legend">Memo:</legend>
+            <label for="socialRate">Memo:</label>
+            <input
+              type="text"
+              id="socialRate"
+              placeholder="Enter your memo here"
+            /><br />
+          </fieldset>
+          <div class="form-buttons">
+            <button id="submitBtn" type="submit">Submit</button>
+            <button id="cancelBtn" type="button">Cancel</button>
+          </div>
+          <!-- <button type="submit">Submit</button>
+          <button type="button" id="cancelBtn">Cancel</button> -->
+        </form>
+      </div>
+    </div>
+
+    <script src="../../../js/PannaCollege/script.js"></script>
+  </body>
+</html>

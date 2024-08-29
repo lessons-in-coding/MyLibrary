@@ -1,3 +1,4 @@
+console.log("Hello Everyone!");
 let users = JSON.parse(localStorage.getItem("users")) || []; // Load users from localStorage
 let editingIndex = -1; // Track the index of the user being edited
 
@@ -136,7 +137,9 @@ function updateLocalStorage() {
 document.getElementById("userForm").addEventListener("submit", handleSubmit);
 
 // Attach click event to "Add User" button
-document.getElementById("addUserBtn").addEventListener("click", showAddUserForm);
+document
+  .getElementById("addUserBtn")
+  .addEventListener("click", showAddUserForm);
 
 // Attach click event to "Cancel" button
 document.getElementById("cancelBtn").addEventListener("click", hideForm);

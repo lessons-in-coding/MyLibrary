@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz with Timer</title>
+    <link rel="stylesheet" href="../../../css/quiz.css" />
+  </head>
+  <body>
+    <div id="start-container">
+      <h2>Welcome to the Quiz!</h2>
+      <input
+        type="text"
+        id="username"
+        placeholder="Enter your name"
+        onfocus="clearPlaceholder(this)"
+      />
+      <button onclick="startQuiz()">Start Quiz</button>
+    </div>
+
+    <div class="quiz-container" id="quiz-container" style="display: none">
+      <div id="timer">Time Left: <span id="time">36</span> seconds</div>
+      <div id="question"></div>
+      <div class="options"></div>
+      <button id="next-question" onclick="checkAnswer()">Submit</button>
+      <div id="feedback"></div>
+    </div>
+
+    <div id="result-container" style="display: none">
+      <h2>Quiz Result</h2>
+      <div id="result"></div>
+      <button id="test-again" onclick="testAgain()">Test Again</button>
+    </div>
+
+    <!-- Store questions in a script tag with type="application/json" -->
+  <script id="questions-data" type="application/json">
+    [
+      {
+        "question": "What is the capital of France?",
+        "options": ["Paris", "Berlin", "Rome", "Madrid"],
+        "answer": "Paris"
+      },
+      {
+        "question": "Which planet is known as the Red Planet?",
+        "options": ["Mars", "Earth", "Jupiter", "Saturn"],
+        "answer": "Mars"
+      },
+      {
+        "question": "What is the largest ocean on Earth?",
+        "options": ["Atlantic Ocean", "Indian Ocean", "Arctic Ocean", "Pacific Ocean"],
+        "answer": "Pacific Ocean"
+      }
+    ]
+  </script>
+    <script src="../../../js/quiz.js"></script>
+  </body>
+</html>
