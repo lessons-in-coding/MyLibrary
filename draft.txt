@@ -1,0 +1,27 @@
+<div id="library-container" style="display: flex; flex-direction: column">
+      <!-- Search Section -->
+      <div id="searchSection" style="padding: 10px; border-bottom: 1px solid #ccc">
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Search by Word, Book Name, or Subject Name"
+          style="width: 80%; padding: 5px"
+        />
+        <button id="searchBtn" style="padding: 5px 10px">Search</button>
+      </div>
+      <!-- Main Content Area -->
+      <div style="display: flex; flex: 1">
+        <!-- Book List (left pane) -->
+        <div id="bookList" style="padding: 10px; border-right: 1px solid #ccc; width: 30%">
+          <!-- Book list will be dynamically populated here -->
+        </div>
+        <!-- File Display (right pane) -->
+        <div id="fileDisplay" style="padding: 10px; flex: 1">
+          <iframe
+            id="fileFrame"
+            name="fileFrame"
+            style="width: 100%; height: 100%; border: none"
+          ></iframe>
+        </div>
+      </div>
+    </div>

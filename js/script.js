@@ -259,3 +259,103 @@ document.addEventListener("DOMContentLoaded", () => {
 
   loadBooks();
 });
+
+/*
+// Render
+// Function to render the book list
+function renderBookList() {
+  const bookList = document.getElementById("bookList");
+  bookList.innerHTML = "";
+
+  for (const book in folderStructure) {
+    for (const folder in folderStructure[book]) {
+      const files = folderStructure[book][folder];
+
+      files.forEach((file) => {
+        const bookItem = document.createElement("div");
+        bookItem.classList.add("book-item");
+        bookItem.style.padding = "5px 0";
+        bookItem.style.cursor = "pointer";
+        bookItem.textContent = `${book} / ${folder} / ${file}`;
+        bookItem.addEventListener("click", () => openFile(book, folder, file));
+        bookList.appendChild(bookItem);
+      });
+    }
+  }
+}
+
+// Function to open a file in the iframe
+function openFile(book, folder, file) {
+  const fileFrame = document.getElementById("fileFrame");
+
+  // Correct file path format
+  const filePath = `books/${book}/${folder}/${file}`;
+  fileFrame.src = filePath;
+}
+
+// Function to handle search input
+function handleSearch() {
+  const searchTerm = document
+    .getElementById("searchInput")
+    .value.trim()
+    .toLowerCase();
+  const fileDisplay = document.getElementById("fileDisplay");
+  fileDisplay.innerHTML = "";
+
+  let searchResults = [];
+
+  // Iterate through the folder structure to find matches
+  for (const book in folderStructure) {
+    for (const folder in folderStructure[book]) {
+      const files = folderStructure[book][folder];
+
+      files.forEach((file) => {
+        // Check if the search term matches the book, folder, or file name
+        if (
+          book.toLowerCase().includes(searchTerm) ||
+          folder.toLowerCase().includes(searchTerm) ||
+          file.toLowerCase().includes(searchTerm)
+        ) {
+          searchResults.push({ book, folder, file });
+        }
+      });
+    }
+  }
+
+  // Display search results
+  if (searchResults.length > 0) {
+    searchResults.forEach((result) => {
+      const resultItem = document.createElement("div");
+      resultItem.classList.add("search-result-item");
+      resultItem.style.padding = "5px 0";
+      resultItem.style.cursor = "pointer";
+      resultItem.textContent = `${result.book} / ${result.folder} / ${result.file}`;
+      resultItem.addEventListener("click", () =>
+        openFile(result.book, result.folder, result.file)
+      );
+      fileDisplay.appendChild(resultItem);
+    });
+  } else {
+    fileDisplay.textContent = "No results found.";
+  }
+
+  // Clear the search input after performing the search
+  document.getElementById("searchInput").value = "";
+}
+
+// Attach event listeners
+document.getElementById("searchBtn").addEventListener("click", (event) => {
+  event.preventDefault(); // Prevent default button behavior
+  handleSearch();
+});
+
+document.getElementById("searchInput").addEventListener("keypress", (event) => {
+  if (event.key === "Enter") {
+    event.preventDefault(); // Prevent default Enter key behavior
+    handleSearch();
+  }
+});
+
+// Render the full book list initially
+renderBookList();
+*/
