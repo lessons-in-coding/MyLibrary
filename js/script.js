@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const folderStructure = {
     မူလတန်း: {
       Grammar: ["lesson.html", "recording.html", "quiz.html"],
-      Sangaha: ["သင်္ဂြိုဟ်.html", "ညဝါ.html", "recording.html", "quiz.html"],
+      Sangaha: ["သင်္ဂြိုဟ်.html", "သရုပ်ခွဲ.html", "ညဝါ.html", "recording.html", "quiz.html"],
       Readings: ["lesson.html", "recording.html", "quiz.html"],
     },
     သီလက္ခန်: {
