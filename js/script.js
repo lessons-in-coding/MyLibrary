@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   const bookList = document.getElementById("bookList");
   const fileDisplay = document.getElementById("fileDisplay");
-  const MAX_FILES = 2;
+  const MAX_FILES = 1;
 
   const folderStructure = {
     မူလတန်း: {
